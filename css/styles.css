@@ -27,19 +27,48 @@ time, mark, audio, video {
 
 :root{
     --action-button-color: hsl(8, 91%, 46%);
-    --complementary-color: #6c8f00;
-    --complementary-color-shade: #95b632;
-    --nav-button-color: hsl(30, 22%, 73%);
-    --nav-text-color: hsl(100, 100%, 99%);
-    --bold-accent-text: rgb(23, 98, 18);
-    --primary-color: #edf1e4;
+    --complementary-color: #4AC6D7;
+    --complementary-color-shade: #68BBB8;
+    --nav-button-color: #FFFFFF;
+    --nav-text-color: black;
+    --bold-accent-text: #FFD95C;
+    --primary-color: ##ffffff;
     --standard-margin: 0 0 1.5rem 0;
-    --background-color-action: hsl(15, 5%, 90%);
+    --background-color-action: #FFFFFF;
 }
+
+/* FONTS:
+Porter Sans Block
+Princess Sofia
+Poppins
+
+font-family: 'Princess Sofia', cursive;
+
+COLORS:
+MARILYN IN CRIMSON - #E81B23
+ROADTRIP - #4AC6D7
+SODA FOUNTAIN - #68BBB8
+LEMON MERINGUE - #FFD95C
+MOTEL SUNSET - #F5855B
+POODLE SKIRT - #FF91BB
+WHITE - #FFFFFF */
 
 
 /* Universal Styling */
 
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+  }
+
+@font-face {
+    font-family:  porterSansblack;
+    src: url(../fonts/porter_sans_black/porter-sans-inline-block-webfont.ttf);
+}
+@font-face {
+    font-family: princessSofia;
+    src: url(../fonts/Sofia/PrincessSofia-Regular.ttf);
+}
 * {
     box-sizing: border-box;
 }
@@ -89,9 +118,9 @@ html{
 .header__logo{
     display: inline-block;
     align-self: flex-start;
-    width: 10%;
+    width: 100%;
     height: auto;
-    background: var(--nav-button-color);
+    background: var(--complementary-color);
 }
 .header__h1{
     color: var(--bold-accent-text);
@@ -105,26 +134,26 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     height: 100%;
     width:100%;
 }
 .menu__div{
-    font-size: 7.7rem;
+    font-size: 5rem;
     font-weight: 900;
     color: var(--action-button-color);
 }
 .menu__div-1{
-    justify-self:center;
+    justify-self:center 
     
 }
 .menu__div-2{
     align-self: center;
 }
 .menu__div-3{
-    /* justify-self: center; */
-    /* align-self: flex-start; */
+    justify-self: flex-end;
+    
 }
 .header-menu__a{
     size: 100%;
@@ -171,8 +200,8 @@ html{
     display: none;
 }
 .menu__icon{
-    height: 15rem;
-    width: 15rem; 
+    height: 85px;
+    width: 85px; 
     
     display:flex;
     flex-direction: column-reverse;
@@ -181,12 +210,12 @@ html{
     justify-self: center; 
     align-self: flex-end;
     border-radius: 100%;
-    padding: 0  0  0 49%;
+    padding: 0  49%  0 50%;
 }
 
 .div__a-next-screen{
-    width:15rem;
-    height:15rem;
+    width:85px;
+    height:85px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -194,8 +223,8 @@ html{
     border-radius:100%;
 }
 .a__img-next-screen{
-    width: 15rem;
-    height: 15rem;
+    width: 100px;
+    height: 100px;
     justify-self: flex-end;
     align-self: flex-end;
     background: var(--nav-button-color);
@@ -231,39 +260,42 @@ html{
     color: var(--nav-text-color);
 }
 .action-call__h1 {
-    font-size: 5.5rem;
-    font-weight: 700;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: poppins;
     text-align: center;
-    width: 70rem;
+    width: 100%;
     padding: 3.5rem 0;
-    background: var(--background-color-action);
-    color: var(--nav-text-color);
+    margin: 0 0 5rem 0;
+    background: var(--complementary-color);
+    color: var(--background-color-action);
     
 }
 .action-call__a {
     font-size: 5rem;
     font-weight: bolder;
+    font-family: poppins;
     background: var(--complementary-color);
     text-decoration: none;
-    color: var(--nav-text-color);
+    color: var(--background-color-action);
     padding: 3rem;
-    margin: 0 0 1rem 0;
-    width: 30rem;
+    margin: 5rem 0 1rem 0;
+    width: 30%;
     text-align: center;
-    align-self: flex-end;
+    align-self: center;
     transition: 750ms;
-    border: 0.5rem var(--nav-text-color) solid;
+    border: 0.5rem var(--bold-accent-text) solid;
     
 }
 .action-call__a:hover{
-    transition: 750ms;
-    padding: 5.5% 66.5% 5.5% 32%;
-    margin: 0;
-    text-align:left;
+    transition: all 750ms ease;
     text-align:center;
+    padding: 5.5% 66.5% 5.5% 32%; 
+    margin: 0;
     transform: translateY(1rem);
     background: var(--complementary-color-shade);
-    border: 0.8rem solid var(--complementary-color);
+    border: 0.8rem solid var(--bold-accent-text);
     font-size: 8.5rem;
     font-weight: bolder;
     border-radius: 0 0 0.5em 0.5em;
@@ -272,27 +304,29 @@ html{
     display:flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    background-image: url("http://placekitten.com/400/300");
+    background-image: url("../assets/cuttingboard.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 90vw;
-    height: 50%;
+    height: 70%;
     margin: 0 0 5rem 0;
     padding: 0 0 0.5rem 0;
     border-radius: 5em 5em;
 }
 
 .action-call__p{
-    font-size: 4.5rem;
+    font-size: 4rem;
+    font-family: poppins;
     text-align: center;
     margin: var(--standard-margin);
-    padding: 3rem 2.5rem 5rem 2.5rem;
-    width: 90rem;
-    height: 40rem;
+    padding: 3rem 1rem 3rem 1rem;
+    width: 60%;
+    height: fit-content;
     align-self: center;
-    background: var(--nav-text-color);
-    color: var(--bold-accent-text);
-    font-weight:bolder;
+    /* border: 0.5rem rgba(136, 236, 240, 0.486) solid; */
+    background: rgba(136, 236, 240, 0.08);
+    color: var(--nav-text-color);
+    font-weight:bold;
 }
 
 .action-call__icon{
@@ -302,19 +336,19 @@ html{
     justify-content: center;
     /* padding: 5rem 0 0rem 0; */
     height:25rem;
-    width:15rem;
+    width:10rem;
 }
 .div__a-next-screen-green{
-    height:15rem;
-    width:15rem;
+    height:10rem;
+    width:10rem;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 .icon__img-green{
-    height:15rem;
-    width:15rem;
+    height:10rem;
+    width:10rem;
     align-self: flex-end;
     background: var(--background-color-action);
     border: 0.75rem solid var(--background-color-action);
@@ -350,14 +384,17 @@ html{
     /* margin: rem 0rem; */
 }
 .about-section__h2{
-    font-size:4.5rem;
-    font-weight: bold;
+    font-family: princessSofia;
+    font-size:6rem;
+    font-weight: 700;
+    text-shadow: 2px 2px var(--complementary-color-shade);
     text-align:center;
     align-self: center;
     padding: 1rem;
     margin: var(--standard-margin);
-    color: var(--action-button-color);
-    width: 80%;
+    color: var(--complementary-color);
+    background: var(--bold-accent-text);
+    width: 100%;
 }
 .about-section__p{
     font-size:2.6rem;
@@ -393,8 +430,8 @@ html{
     align-items: center;
     align-self: center;
     background: var(--primary-color);
-    height: 15rem;
-    width: 15rem;
+    height: 85px;
+    width: 85px;
 }
 .div__a-to-preview{
     align-self:center;
@@ -402,8 +439,8 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 15rem;
-    width: 15rem;
+    height: 85px;
+    width: 85px;
     border-radius: 100%;
     
 }
@@ -411,8 +448,8 @@ html{
     align-self: center;
     justify-self: center;
     background: var(--primary-color);
-    height: 15rem;
-    width: 15rem;
+    height: 85px;
+    width: 85px;
     border-radius: 100%;
     transition: 750ms;
     opacity: 55%;
@@ -436,6 +473,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    font-size: 3rem;
     background: var(--primary-color);
     height: 100vh;
     width:100%;
@@ -492,7 +530,7 @@ html{
     display: flex;
     flex-direction: column;
     background: var(--primary-color);
-    height: 95vh;
+    height: 90vh;
     width: 100%;
 }
 .testimonial-section__h2{
@@ -519,13 +557,13 @@ html{
     align-items: center;
     justify-content:center;
     height: fit-content;
-    width: 40%;
+    width: 60%;
 }
 .div__flexbox-odd{
   align-self: flex-end;
 }
 .div__flexbox-even{
-align-self: flex-start;
+    align-self: flex-start;
 }
 .flexbox-content__img{
     /* margin: 1rem 1rem 3.0rem 1rem; */
@@ -538,21 +576,43 @@ align-self: flex-start;
     width: 50%;
 }
 
-.div__div-icon{
+
+
+
+/* Footer Section Styling */
+.footer{
+    background: var(--nav-button-color);
+    width: 100%;
+    height: fit-content;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer-menu__item{
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: none;
+    background: var(--nav-button-color);
+    color: var(--nav-text-color);
+    padding: 0.75rem;
+}
+.nav__div-icon{
     align-self:center;
     justify-self: flex-end;
-    width:15rem;
+    width: 85px;
     height: fit-content;
     border-radius: 100%;
 }
 .div__a-to-top{
     width:100%;
-    height:15rem;
+    height:85px;
     border-radius: 100%;
 }
 .a-to-top__img{
-    width:15rem;
-    height:15rem;
+    width:85px;
+    height:85px;
     opacity:55%;
     transition: 750ms;
     border-radius: 100%;
@@ -567,24 +627,4 @@ align-self: flex-start;
 .a-to-top__img:active{
     transition: 100ms;
     transform: translateY(1.5rem);
-}
-
-/* Footer Section Styling */
-.footer{
-    background: var(--nav-button-color);
-    width: 100%;
-    height: auto;
-}
-.footer__nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.footer-menu__item{
-    display: inline-block;
-    font-size: 5.5rem;
-    text-decoration: none;
-    background: var(--nav-button-color);
-    color: var(--nav-text-color);
-    padding: 0.75rem;
 }
