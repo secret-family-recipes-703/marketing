@@ -48,12 +48,15 @@ html{
     scroll-behavior: smooth;
 }
 .body{
-    width: 100%;
+    width: 100vw;
 }
 .body__div{
     background:var(--primary-color);
-    width: 100%;
-    margin: auto;
+    width: 95vw;
+    height: auto;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
 }
 .container__div-to-the-top{
     background-color: var(--nav-button-color);
@@ -73,6 +76,7 @@ html{
     height: 100vh;
 }
 .header__logo-div{
+    width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -103,7 +107,7 @@ html{
     width:100%;
 }
 .menu__div{
-    font-size: 8rem;
+    font-size: 7.7rem;
     font-weight: 900;
     color: var(--action-button-color);
 }
@@ -338,7 +342,7 @@ html{
     justify-content: space-between;
     background: var(--primary-color);
     height:100vh;
-    width:100vw;
+    width:100%;
     /* margin: rem 0rem; */
 }
 .about-section__h2{
@@ -483,7 +487,7 @@ html{
     flex-direction: column;
     background: var(--primary-color);
     height: 95vh;
-    width: 100vw;
+    width: 100%;
 }
 .testimonial-section__h2{
     font-size:8.5rem;
@@ -497,8 +501,9 @@ html{
     flex-wrap: wrap;
     margin: var(--standard-margin);
     align-items: flex-start;
+    
     justify-content: space-between;
-    width: 95rem;
+    width: 100%;
     height: 90vh;
 }
 .div__flexbox-content{
@@ -510,7 +515,7 @@ html{
 }
 .div__flexbox-odd{
     align-self: flex-end;
-    width:98vw;
+    /* width:100%; */
 }
 .flexbox-content__img{
     margin: 1rem 1rem 3.0rem 1rem;
@@ -529,7 +534,6 @@ html{
     align-self:center;
     justify-self: flex-end;
     width:15rem;
-    height:15rem;
     border-radius: 100%;
 }
 .div__a-to-top{
@@ -560,6 +564,7 @@ html{
 .footer{
     background: var(--nav-button-color);
     height: 5vh;
+    width: 100%;
 }
 .footer__nav{
     display: flex;
