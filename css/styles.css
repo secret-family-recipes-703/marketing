@@ -237,12 +237,10 @@ html{
 .a__img-next-screen:hover{
     transition: 750ms;
     transform: scale(1.2, 1.2, 1.2);
-    background: var(--nav-button-color);
-    border: 0.75rem solid var(--nav-button-color);
+    background: var(--complementary-color-shade);
+    border: 0.75rem solid var(--complementary-color-shade);
     opacity: 95%;
     border-radius:100%;
-    border: 0.5rem solid var(--nav-text-color);
-    background: var(--nav-text-color);
 }
 .a__img-next-screen:active{
     transform: translateY(1.5rem);
@@ -351,8 +349,8 @@ html{
     height:10rem;
     width:10rem;
     align-self: flex-end;
-    background: var(--background-color-action);
-    border: 0.75rem solid var(--background-color-action);
+    background: var(--primary-color);
+    border: 0.75rem solid var(--nav-button-color);
     border-radius:100%;
     opacity: 65%;
     transition: 750ms;
@@ -364,8 +362,8 @@ html{
     opacity: 95%;
     align-self: flex-end;
     border-radius: 100%;
-    border:0.5rem solid var(--nav-text-color);
-    background: var(--nav-text-color);
+    border:0.5rem solid var(--complementary-color-shade);
+    background: var(--complementary-color-shade);
 }
 .icon__img-green:active{
     transform: translateY(1.5rem);
@@ -468,7 +466,7 @@ span {
 .a__img-to-preview{
     align-self: center;
     justify-self: center;
-    background: var(--primary-color);
+    background: var(--nav-button-color);
     height: 85px;
     width: 85px;
     border-radius: 100%;
@@ -478,8 +476,8 @@ span {
 .a__img-to-preview:hover{
     transition: 750ms;
     opacity: 95%;
-    border: 0.5rem solid var(--nav-text-color);
-    background: var(--nav-text-color);
+    border: 0.5rem solid var(--bold-accent-text);
+    background: var(--bold-accent-text);
     transform: scale(1.2, 1.2, 1.2);
     transform: translateY(-1.5rem);
 }
@@ -560,7 +558,7 @@ span {
     display: flex;
     flex-direction: column;
     background: var(--primary-color);
-    height: 94vh;
+    height: 93vh;
     width: 100%;
     font-family: poppins;
 }
@@ -621,7 +619,7 @@ span {
 
 /* Footer Section Styling */
 .footer{
-    background: var(--nav-button-color);
+    background: var(--complementary-color-shade);
     width: 100%;
     height: fit-content;
 }
@@ -637,6 +635,9 @@ span {
 }
 .nav__div{
     font-size: 3.4rem;
+}
+.nav__a-icon{
+    color:var(--bold-accent-text);
 }
 .footer-menu__item{
     display: inline-block;
@@ -669,13 +670,14 @@ span {
     opacity:55%;
     transition: 750ms;
     border-radius: 100%;
+    background: var(--complementary-color-shade);
 }
 .a-to-top__img:hover{
     transition: 750ms;
     opacity: 95%;
     transform: scale(1.2, 1.2, 1.2);
-    background: var(--nav-text-color);
-    border: 0.5rem var(--nav-text-color) solid;
+    background: var(--nav-button-color);
+    border: 0.5rem var(--nav-button-color) solid;
 }
 .a-to-top__img:active{
     transition: 100ms;
