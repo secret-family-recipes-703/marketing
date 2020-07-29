@@ -694,6 +694,7 @@ span {
     transition: 100ms;
     transform: translateY(1.5em);
 }
+
 /* Responsive media queries  */
 @media screen and (min-width: 1000px){
 
