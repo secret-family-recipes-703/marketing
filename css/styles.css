@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px lightgrey solid;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -140,7 +140,7 @@ html{
     width:100%;
 }
 .menu__div{
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: 900;
     color: var(--action-button-color);
 }
@@ -279,7 +279,7 @@ html{
     color: var(--background-color-action);
     padding: 1em;
     margin: 1em 0 0.5em 0;
-    width: 30%;
+    width: fit-content;
     text-align: center;
     align-self: center;
     transition: 750ms;
@@ -289,14 +289,14 @@ html{
 .action-call__a:hover{
     transition: all 750ms ease;
     text-align:center;
-    padding: 5.5% 60.5% 5.5% 38%; 
+    padding: 1.1em; 
     margin: 0;
-    transform: translateY(0.5em);
+    transform: translateY(0.1em);
     background: var(--complementary-color-shade);
     border: 0.18em solid var(--bold-accent-text);
     font-size: 2em;
     font-weight: bolder;
-    border-radius: 0 0 0.5em 0.5em;
+    /* border-radius: 0 0 0.5em 0.5em; */
 }
 .action-call__background-img{
     display:flex;
@@ -305,8 +305,8 @@ html{
     background-image: url("../assets/cuttingboard.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 90%;
-    height: 80%;
+    width: 75%;
+    height: 50%;
     margin: 0 0 1em 0;
     padding: 0 0 0.5em 0;
     border-radius: 0.5em 0.5em;
@@ -493,7 +493,7 @@ span {
     align-items: center;
     justify-content: space-between;
     font-family: poppins;
-    font-size: 1.6em;
+    font-size: 1.2em;
     background: var(--primary-color);
     height: 100vh;
     width:100%;
@@ -824,7 +824,7 @@ section {
 .section__icon{
     display: none;
 }
-
+/* Preview section styling */
 .preview-section{
     flex-direction: row;
     flex-wrap: wrap;
@@ -839,6 +839,9 @@ section {
     align-items: center;
     justify-content: center;
     width: 25%;
+    border: 0.2em var(--complementary-color) solid;
+    border-radius: 0.7em;
+    padding: 1.1em;
 }
 .flexbox-div__p{
     width: 100%;
@@ -850,6 +853,7 @@ section {
     height:15%;
     margin: 2% 5%;
     padding: 0;
+    border: none;
 }
 .flexbox-div__img--last{
     width:100%;
