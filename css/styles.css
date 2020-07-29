@@ -885,7 +885,8 @@ section {
 .testimonial-section__div{
 }
 .testimonial-section__h2{
-    font-size: 4.2em;
+    font-size: 2em;
+    color: var(--bold-accent-text);
 }
 
 .div__flexbox-content{
