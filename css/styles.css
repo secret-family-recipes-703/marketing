@@ -553,6 +553,10 @@ span {
     width: 50%;
     font-weight: bolder;
 }
+.section__div-slide{
+    height: 57px;
+    width: 57px;
+}
 /* Testimonials Section Styling */
 
 .testimonial-section{
