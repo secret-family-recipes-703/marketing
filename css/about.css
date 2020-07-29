@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1px black solid;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -255,6 +255,7 @@ html{
     flex-direction: column;
     background: var(--primary-color);
     width: 100%;
+    height:fit-content;
     font-family: poppins;
 }
 .testimonial-section__h2{
