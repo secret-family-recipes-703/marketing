@@ -84,7 +84,7 @@ html{
     background:var(--primary-color);
     width: 95vw;
     /* max-width: */
-    height: auto;
+    /* height: auto; */
     margin: auto; 
     display: flex;
     flex-direction: column;
