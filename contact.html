@@ -25,17 +25,17 @@
             <nav class="nav header__nav menu header-menu header-menu--hidden header__about-nav">
                 <div class="menu__div menu__div-1">
                     <a class="header-menu__a header-menu__a-odd menu__icon-home menu__icon--hidden" href="index.html">
-                        <i class="a__icon fa fa-home fa-3x fa-fw"></i>
+                        <i class="a__icon fa fa-home fa-3x fa-fw" aria-label="home"></i>
                     </a>
                 </div>
                 <div class="menu__div menu__div-2">
                     <a class="header-menu__a header-menu__a-even menu__icon-about menu__icon--hidden" href="about.html">
-                        <i class="a__icon fa fa-info-circle fa-3x fa-fw"></i>
+                        <i class="a__icon fa fa-info-circle fa-3x fa-fw" aria-label="about"></i>
                     </a>
                 </div>
                 <div class="menu__div menu__div-3">
                     <a class="header-menu__a header-menu__a-even menu__icon-contact menu__icon--hidden" href="#">
-                     <i class="a__icon fa fa-envelope fa-3x fa-fw"></i>
+                     <i class="a__icon fa fa-envelope fa-3x fa-fw" aria-label="contact"></i>
                     </a>
                 </div>
             </nav>
@@ -49,45 +49,67 @@
         <section class="section testimonial-section" id="testimonial">
             <h1 class="testimonial-section__h2">Get In Touch:</h1>
             <div class="testimonial-section__div">
-            <p class="coming soon">COMING SOON!</p>
+                <ul>
+                    <li class="list-heading"><a href="https://github.com/secret-family-recipes-703">Our Github Organization</a></li>
+                    <ul>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/barbaralois">Barbara</a>
+                        </li>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/dstemple7">David</a>
+                        </li>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/KevinLam2980">Kevin</a>
+                        </li>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/Katnoelii">Kate</a>
+                        </li>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/ianbautista">Christian</a>
+                        </li>
+                        <li>
+                            <img class="github" src="./assets/github.png" aria-hidden="true"/>
+                            <a class="github-link" href="https://github.com/devbeau">Beau</a>
+                        </li>
+                    </ul>
+
+                </ul>
             </div>
             </section>
-        <footer class ="footer">
-            <nav class = footer__nav-mobile>
-                <div class="nav__div nav__div-1">
-                        <a class="nav__a-icon  menu__icon--hidden" href="index.html">
-                            <i class="a__icon fa fa-home fa-3x fa-fw"></i>
+            <footer class ="footer">
+                <nav class = footer__nav-mobile>
+                    <div class="nav__div nav__div-1">
+                            <a class="nav__a-icon  menu__icon--hidden"  href="index.html">
+                                <i class="a__icon fa fa-home fa-3x fa-fw" aria-label="Home"></i>
+                            </a>
+                        </div>
+                        <div class="nav__div nav__div-2">
+                            <a class="nav__a-icon  menu__icon--hidden"" href="#">
+                                <i class="a__icon fa fa-info-circle fa-3x fa-fw"  aria-label="About"></i>
+                            </a>
+                        </div>
+                        <div class="nav__div nav__div-icon">
+                            <a class="div-icon__a div__a-to-top" href="#top-of-page">
+                              <img class="a-to-top__img" src="assets/up-arrow.png" alt="up arrow"/>
+                            </a>
+                        </div>  
+                    <div class="nav__div nav__div-4">
+                        <a class="nav__a-icon  menu__icon--hidden" href="contact.html">
+                            <i class="a__icon fa fa-envelope fa-3x fa-fw" aria-label="Contact"></i>
+                        </a>
+                        </div>
+                    <div class="nav__div nav__div-5">
+                        <a class="nav__a-icon  menu__icon--hidden" href="#register">
+                            <img class ="icon-img" src ="./assets/SFR Icon.png" alt="a stylized fork">
                         </a>
                     </div>
-                    <div class="nav__div nav__div-2">
-                        <a class="nav__a-icon  menu__icon--hidden" href="about.html">
-                            <i class="a__icon fa fa-info-circle fa-3x fa-fw"></i>
-                        </a>
-                    </div>
-                    <div class="nav__div nav__div-icon">
-                        <a class="div-icon__a div__a-to-top" href="#top-of-page">
-                          <img class="a-to-top__img" src="assets/up-arrow.png"/>
-                        </a>
-                    </div>  
-                <div class="nav__div nav__div-4">
-                    <a class="nav__a-icon  menu__icon--hidden" href="#">
-                        <i class="a__icon fa fa-envelope fa-3x fa-fw"></i>
-                    </a>
-                    </div>
-                <div class="nav__div nav__div-5">
-                    <a class="nav__a-icon  menu__icon--hidden" href="#register">
-                        <img class ="icon-img" src ="./assets/SFR Icon.png" alt="a stylized fork">
-                    </a>
-                </div>
-            </nav>
-            <nav class="nav footer__nav menu footer-menu">
-                <a class="footer-menu__item footer-menu__home menu__item menu__home" href="#top-of-page">Home</a>
-                <a class="footer-menu__item footer-menu__about menu__item menu__about" href="about.html">About</a>
-             
-                <a class="footer-menu__item footer-menu__contact menu__item menu__contact" href="contact.html">Contact</a>
-                <a class="footer-menu__item footer-menu__register menu__item menu__register" href="#top-of-page">Register</a>
-            </nav>
-        </footer>
+                </nav>
+            </footer>
     </div>
 </body>
 </html>

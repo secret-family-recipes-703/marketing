@@ -98,6 +98,63 @@ html{
 #top-of-page{
     background: var(--complementary-color);
 }
+
+ul{ 
+ list-style: none;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ text-decoration: none;
+ align-content: center;
+}
+.list-heading{
+    font-size: calc(2.4em + 6 * ((100vw - 320px) / 400));
+    margin: 0 auto 2em auto;
+}
+.list-heading > a{
+    text-decoration: none;
+    color: var(--bold-accent-text);
+}
+li{
+    font-size: calc(1.5em + 6 * ((100vw - 320px) / 400));
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--complementary-color);
+    border-radius: 50px;
+    padding: 0.2em 0.4em;
+    box-shadow: 7px 7px 5px 0px rgba(22, 115, 128, 0.75);
+    transition: 200ms;
+}
+li:hover{
+    transition: 250ms;
+    background-color: var(--complementary-color-shade);
+    box-shadow: 3px 3px 1px 0px rgba(22, 115, 128, 0.75);
+}
+li:active{
+    transition: 250ms;
+    transform: translateY(0.5em);
+}
+.github{
+    display: inline-block;
+    width: calc(1.5em + 6 * ((100vw - 320px) / 400));
+    height: calc(1.5em + 6 * ((100vw - 320px) / 400));
+    margin-right: 0.2em;
+    /* margin-top: px; */
+    transition: 250ms;
+}
+.github:hover{
+    transition: 200ms;
+    transform: rotate(270deg);
+}
+.github-link{
+    font-size: calc(1.3em + 6 * ((100vw - 320px) / 400));
+    text-decoration: none;
+    color: var(--nav-button-color);
+}
 /* Header Styling */
 .header {
     display:flex;
@@ -145,6 +202,10 @@ html{
     font-size: 2.4em;
     font-weight: 900;
     color: var(--action-button-color);
+}
+.header-menu__a:hover{
+    transition: 250ms;
+    color: var(--complementary-color-shade);
 }
 .menu__div-1{
     /* justify-self:center  */
@@ -369,7 +430,7 @@ h3{
     width:50px;
     height:50px;
     padding: 0.2em;
-    
+    border-radius: 90%;
 }
 .div__a-to-top{
     width: 50px;
@@ -395,7 +456,14 @@ h3{
     transition: 100ms;
     transform: translateY(0.5em);
 }
-
+.icon-img:hover{
+    transition: 250ms;
+    background: var(--nav-button-color);
+}
+.nav__a-icon:hover{
+    transition: 250ms;
+    color:var(--nav-button-color);
+}
 /* Responsive media queries  */
 @media screen and (min-width: 1000px){
 
@@ -457,6 +525,9 @@ section {
 }
 .header-menu__register{
     display: none;
+}
+.header-menu__contact{
+    flex-grow: 1;
 }
 .header__logo-div{
     align-self: flex-start;
