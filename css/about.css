@@ -154,6 +154,9 @@ li:active{
     font-size: calc(1.3em + 6 * ((100vw - 320px) / 400));
     text-decoration: none;
     color: var(--nav-button-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /* Header Styling */
 .header {
