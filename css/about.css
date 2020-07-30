@@ -141,7 +141,9 @@ li:active{
 .github{
     display: inline-block;
     width: calc(1.5em + 6 * ((100vw - 320px) / 400));
+    max-width: calc(1.5em + 6 * ((760/400)));
     height: calc(1.5em + 6 * ((100vw - 320px) / 400));
+    max-height: calc(1.5em + 6 * ((760/400)));
     margin-right: 0.2em;
     /* margin-top: px; */
     transition: 250ms;
@@ -154,6 +156,9 @@ li:active{
     font-size: calc(1.3em + 6 * ((100vw - 320px) / 400));
     text-decoration: none;
     color: var(--nav-button-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /* Header Styling */
 .header {
@@ -492,7 +497,18 @@ h3{
 section {
     height: auto;
 }
-
+.github{
+    display: inline-block;
+    width: 85px ;
+    height: 85px;
+    max-height: calc(1.5em + 6 * ((760/400)));
+    margin-right: 0.2em;
+    /* margin-top: px; */
+    transition: 250ms;
+}
+.github-link{
+    font-size: 1.6em;
+}
 /* Header Styling */
 
 .header{
