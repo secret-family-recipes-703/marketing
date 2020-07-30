@@ -380,20 +380,20 @@ h3{
     width: 50px;
     height:50px;
     opacity:55%;
-    transition: 750ms;
+    transition: 350ms;
     border-radius: 100%;
     background: var(--complementary-color-shade);
 }
 .a-to-top__img:hover{
-    transition: 750ms;
+    transition: 350ms;
     opacity: 95%;
-    transform: scale(1.2, 1.2, 1.2);
+    /* transform: scale(1.2, 1.2, 1.2); */
     background: var(--nav-button-color);
     border: 0.5em var(--nav-button-color) solid;
 }
 .a-to-top__img:active{
     transition: 100ms;
-    transform: translateY(1.5em);
+    transform: translateY(0.5em);
 }
 
 /* Responsive media queries  */
