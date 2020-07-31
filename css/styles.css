@@ -24,9 +24,9 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* Meyer Reset, and other imported code ends here */
-
+/* Variable names are not indicative of actual usage */
 :root{
-    --action-button-color: #E81B23;
+    --action-button-color: #E81B23;                 
     --complementary-color: #4AC6D7;
     --complementary-color-shade: #68BBB8;
     --nav-button-color: #FFFFFF;
@@ -54,9 +54,17 @@ MOTEL SUNSET - #F5855B
 POODLE SKIRT - #FF91BB
 WHITE - #FFFFFF */
 
-
-/* Universal Styling */
-
+/* ,ggg,         gg                                                                                     
+dP""Y8a        88                                                                               ,dPYb,
+Yb, `88        88                                                                               IP'`Yb
+ `"  88        88                 gg                                                            I8  8I
+     88        88                 ""                                                            I8  8'
+     88        88   ,ggg,,ggg,    gg      ggg    gg    ,ggg,    ,gggggg,    ,g,       ,gggg,gg  I8 dP 
+     88        88  ,8" "8P" "8,   88     d8"Yb   88bg i8" "8i   dP""""8I   ,8'8,     dP"  "Y8I  I8dP  
+     88        88  I8   8I   8I   88    dP  I8   8I   I8, ,8I  ,8'    8I  ,8'  Yb   i8'    ,8I  I8P   
+     Y8b,____,d88,,dP   8I   Yb,_,88,_,dP   I8, ,8I   `YbadP' ,dP     Y8,,8'_   8) ,d8,   ,d8b,,d8b,_ 
+      "Y888888P"Y88P'   8I   `Y88P""Y88"     "Y8P"   888P"Y8888P      `Y8P' "YY8P8PP"Y8888P"`Y88P'"Y88
+       */
 @font-face {
     font-family: Poppins;
     src: url(../fonts/poppins/Poppins-Regular.ttf);
@@ -83,7 +91,6 @@ html{
 .body__div{
     background:var(--primary-color);
     width: 95vw;
-    /* max-width: */
     height: auto;
     margin: auto; 
     display: flex;
@@ -98,7 +105,20 @@ html{
 #top-of-page{
     background: var(--complementary-color);
 }
-/* Header Styling */
+
+/* ,ggg,        gg                                                          
+dP""Y8b       88                               8I                         
+Yb, `88       88                               8I                         
+ `"  88       88                               8I                         
+     88aaaaaaa88                               8I                         
+     88"""""""88   ,ggg,     ,gggg,gg    ,gggg,8I   ,ggg,    ,gggggg,     
+     88       88  i8" "8i   dP"  "Y8I   dP"  "Y8I  i8" "8i   dP""""8I     
+     88       88  I8, ,8I  i8'    ,8I  i8'    ,8I  I8, ,8I  ,8'    8I     
+     88       Y8, `YbadP' ,d8,   ,d8b,,d8,   ,d8b, `YbadP' ,dP     Y8,    
+     88       `Y8888P"Y888P"Y8888P"`Y8P"Y8888P"`Y8888P"Y8888P      `Y8    
+                                                                          
+                                                                          
+                                                                           */
 .header {
     display:flex;
     flex-direction: column;
@@ -140,7 +160,7 @@ html{
     width:100%;
 }
 .menu__div{
-    font-size: calc(1.5em + 6 * ((100vw - 320px) / 660));
+    font-size: calc(1.75em + 6 * ((100vw - 320px) / 660));
     font-weight: 900;
     color: var(--action-button-color);
 }
@@ -403,7 +423,7 @@ html{
     width: 100%;
 }
 .about-section__p{
-    font-size: 1.4em;
+    font-size: calc(1.1em + 6 * ((100vw - 320px) / 660));
     font-family: poppins;
     font-weight: bold;
     align-self: center;
@@ -420,7 +440,7 @@ html{
     height: auto;
 }
 .about-section__p-warning{
-    font-size: 1.4em;
+    font-size: calc(1.1em + 6 * ((100vw - 320px) / 660));
     font-family: poppins;
     font-weight: 700;
     color: white;
